@@ -2,15 +2,15 @@ import requests
 from twilio.rest import Client
 
 
-api_key = "7ea363a0f1ea35e3bc7c13ed2cb58874"
-account_sid = "ACa20a3c9d2510e8075068c3737f19dce2"
-auth_token = "6619cf5705678c8e472d2bbcaa7ba0b4"
+api_key = ""
+account_sid = ""
+auth_token = ""
 
 parameters = {
-    "lat": 67.4082508,
-    "lon": -68.47072222222222,
+    "lat": ,
+    "lon": ,
     "exclude": "current,minutely,daily",
-    "appid": "7ea363a0f1ea35e3bc7c13ed2cb58874"
+    "appid": ""
 
 }
 
