@@ -3,9 +3,9 @@ from datetime import datetime
 import smtplib
 import time
 
-MY_LAT = 45.349957  # Your latitude
-MY_LONG = -75.645173  # Your longitude
-PASSWORD = "uqwjawnamvtmqnuy"
+MY_LAT =   # Your latitude
+MY_LONG =  # Your longitude
+PASSWORD = ""
 
 
 def is_iss_overhead():
@@ -43,10 +43,10 @@ while True:
     if is_iss_overhead() and is_night():
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
-            connection.login(user="pythontemp69@gmail.com", password=PASSWORD)
+            connection.login(user="", password=PASSWORD)
             connection.sendmail(
-                from_addr="pythontemp69@gmail.com",
-                to_addrs="messikazi2121@gmail.com",
+                from_addr="",
+                to_addrs="",
                 msg=f"Subject: ISS is Overhead!!! \n\nLOOK UP! ISS is above you!"
             )
 
