@@ -34,9 +34,9 @@ signin.click()
 email = driver.find_element(By.ID, value='username')
 password = driver.find_element(By.ID, value='password')
 email.click()
-email.send_keys("pythontemp69@gmail.com")
+email.send_keys("")
 email.send_keys(Keys.ENTER)
-password.send_keys('Python6969$$')
+password.send_keys('')
 password.send_keys(Keys.ENTER)
 
 
@@ -54,12 +54,6 @@ for job in all_jobs:
         easyapply = driver.find_element(By.CSS_SELECTOR, value='.jobs-s-apply button')
 
         easyapply.click()
-
-        # time.sleep(2)
-        # phone = driver.find_element(By.CSS_SELECTOR, value='div input')
-        # if phone.text == "":
-        #     phone.click()
-        #     phone.send_keys('12345678900')
 
         time.sleep(2)
         next = driver.find_element(By.CSS_SELECTOR, value='div button')
