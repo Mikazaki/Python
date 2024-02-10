@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import lxml
 import smtplib
 
-PASSWORD = "uqwjawnamvtmqnuy"
+PASSWORD = ""
 
 URL = "https://www.amazon.com/SOHOMACH-Electric-Standing-Desk-Adjustable/dp/B0CF7J5HGB/ref=sr_1_7?keywords=standing%2Bdesk&sr=8-7&th=1"
 
@@ -27,9 +27,9 @@ if float(price) < 140:
     message = f"{title} is now {price}"
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user="pythontemp69@gmail.com", password=PASSWORD)
+        connection.login(user="", password=PASSWORD)
         connection.sendmail(
-            from_addr="pythontemp69@gmail.com",
-            to_addrs="messikazi2121@gmail.com",
+            from_addr="",
+            to_addrs="",
             msg=f"Subject:Amazon Price Alert!\n\n{message}\n{URL}".encode("utf-8")
         )
