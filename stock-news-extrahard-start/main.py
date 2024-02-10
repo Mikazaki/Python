@@ -5,12 +5,12 @@ from twilio.rest import Client
 STOCK = "TSLA"
 COMPANY_NAME = "tesla"
 
-API_KEY = "981U5T8FBAGN3KFW"
+API_KEY = ""
 
-API_KEY_NEWS = "f963eeeea6d44b6a90f073a813fcd477"
+API_KEY_NEWS = ""
 
-account_sid = "ACa20a3c9d2510e8075068c3737f19dce2"
-auth_token = "6619cf5705678c8e472d2bbcaa7ba0b4"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 
 parameter = {
@@ -59,7 +59,7 @@ if increase >= 5 or increase <= -5:
             message = client.messages.create(
                 body=f"{STOCK}: 🔺{round(increase, 2)}%\nHeadline: {headline}\nBrief: {description}\n",
                 from_='+12057917118',
-                to='+13439966636'
+                to=''
             )
             print(message.status)
 
@@ -67,6 +67,6 @@ if increase >= 5 or increase <= -5:
             message = client.messages.create(
                 body=f"{STOCK}: 🔻{abs(round(increase, 2))}%\nHeadline: {headline}\nBrief: {description}\n",
                 from_='+12057917118',
-                to='+13439966636'
+                to=''
             )
             print(message.status)
