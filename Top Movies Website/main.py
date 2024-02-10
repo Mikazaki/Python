@@ -88,7 +88,7 @@ def add():
 
         headers = {
             "accept": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZDUyNWQyMzRlODhkYTRiZDMxMjFhNDNiMGFhMDE0NyIsInN1YiI6IjY1ODcyYzUyZmFkOGU5NWRjYThkODY0OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.z_eCJz6DjLcr8NIai6BiN9DRhw7XxFqiejsPdiv19bw"
+            "Authorization": ""
         }
 
         response = requests.get(url, headers=headers)
@@ -108,7 +108,7 @@ def find(id):
         URL_ID = f"https://api.themoviedb.org/3/movie/{id}?language=en-US"
         headers = {
             "accept": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZDUyNWQyMzRlODhkYTRiZDMxMjFhNDNiMGFhMDE0NyIsInN1YiI6IjY1ODcyYzUyZmFkOGU5NWRjYThkODY0OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.z_eCJz6DjLcr8NIai6BiN9DRhw7XxFqiejsPdiv19bw"
+            "Authorization": ""
         }
 
         movie_url = "https://image.tmdb.org/t/p/original"
