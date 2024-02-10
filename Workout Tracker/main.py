@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime
 
-APP_ID = "e2f844b7"
-API_KEY = "36230fdd0a4676370f86d0ada2f3953d"
+APP_ID = ""
+API_KEY = ""
 GENDER = "female"
 WEIGHT_KG = 64
 HEIGHT_CM = 175
