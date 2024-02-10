@@ -33,10 +33,10 @@ driver.switch_to.window(fb_popup)
 time.sleep(2)
 email = driver.find_element(By.XPATH, value='//*[@id="email"]')
 email.click()
-email.send_keys("pythontemp69@gmail.com")
+email.send_keys("")
 password = driver.find_element(By.ID, value='pass')
 password.click()
-password.send_keys("Python6969$")
+password.send_keys("")
 password.send_keys(Keys.ENTER)
 
 
